@@ -1,0 +1,26 @@
+/* 公共的样式表 */
+/* 开启bfc*/
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    /* 设置字体样式 */
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    /* 设置最小显示尺寸 */
+    min-width: 1226px;
+    
+}
+.w{
+    /* 设置宽度 */
+    width: 1226px;
+    /* 设置居中显示*/
+    margin: 0 auto;
+}
+/* 去除所有a的下划线 */
+a{
+    text-decoration: none;
+}
