@@ -1,0 +1,465 @@
+/* 顶部导航条的样式 */
+.topbar-wrapper {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(51, 51, 51)
+}
+
+/* 设置字体颜色 */
+.topbar a {
+    display: block;
+    font-size: 12px;
+    color: #a4a4a4;
+}
+
+/* 设置鼠标移入的效果 */
+.topbar a:hover {
+    color: #fff;
+}
+
+/* 设置线的效果 */
+.topbar .line {
+    font-size: 12px;
+    color: #42423e;
+    margin: 0 7px;
+}
+
+/* 设置左侧导航条和所有li浮动的样式 */
+.service,
+.topbar-wrapper li {
+    float: left;
+}
+
+/* 设置下拉的样式 二维码*/
+.application .qrcode {
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    line-height: 1;
+    width: 124px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: white;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, .3);
+    z-index: 9999;
+}
+
+/* 设置背景图片 */
+.application .qrcode img {
+    width: 90px;
+    height: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+/* 设置文字效果 */
+.application .qrcode span {
+    color: black;
+    font-size: 14px;
+}
+
+/* 设置父元素定位，即让二维码相对父元素定位 */
+.application {
+    position: relative;
+}
+
+/* 设置一个尖角 */
+.application::after {
+    display: none;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 6px solid transparent;
+    border-top: none;
+    border-bottom-color: white;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+/* 设置鼠标移入的效果 */
+.app-wrapper:hover>.application .qrcode,
+.app-wrapper:hover>.application::after {
+    display: block;
+    height: 148px;
+}
+
+/* 设置右侧导航条的样式 */
+.shop-cart,
+.user-info {
+    float: right;
+}
+
+/* 设置购物车的样式 */
+.shop-cart {
+    margin-left: 25px;
+    position: relative;
+}
+
+/* 设置购物车的原始样式 */
+.shop-cart a {
+    height: 40px;
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+    position: relative;
+}
+
+.shop-cart i {
+    margin-right: 2px;
+}
+
+/* 设置鼠标移入购物车的样子 */
+.shop-cart:hover a,
+.shop-cart:hover {
+    background-color: #fff;
+    color: #ff6700;
+    display: block;
+}
+
+
+/* 设置logo的样式 */
+.header {
+    height: 100px;
+    background-color: white;
+}
+
+.header .logo {
+    position: relative;
+    float: left;
+    margin-top: 22.5px;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.header .logo a {
+    position: absolute;
+    background-color: #ff6700;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/mi.png);
+    background-position: center;
+    background-size: 55px 55px;
+    left: 0;
+    transition: left 0.3s;
+}
+
+.header .logo .home {
+    background-image: url(../img/home.png);
+    left: -55px;
+}
+
+.header .logo:hover .mi {
+    left: 55px;
+}
+
+.header .logo:hover .home {
+    left: 0;
+}
+
+/* 设置头部导航条的样式 */
+.nav-wrapper {
+    float: left;
+    margin-left: 7px;
+}
+
+.nav {
+    width: 792px;
+    height: 100px;
+    background-color: white;
+    line-height: 100px;
+    padding-left: 58px;
+}
+
+.nav>li {
+    float: left;
+}
+
+.menu {
+    position: relative;
+}
+
+.navigation-menu {
+    width: 234px;
+    height: 420px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: -120px;
+    z-index: 99;
+    line-height: 1;
+
+}
+
+.navigation-menu span {
+    font-size: 16px;
+    display: block;
+    line-height: 42px;
+    color: white;
+    margin-right: 0;
+    padding: 0 30px;
+}
+
+.navigation-menu span i {
+    float: right;
+    line-height: 42px;
+
+}
+
+.navigation-menu span:hover {
+    background-color: #ff6700;
+}
+
+.nav>li a {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-right: 20px;
+}
+
+.nav>.item:hover a {
+    display: block;
+    color: #ff6700;
+
+}
+
+.all-goods {
+    visibility: hidden;
+}
+
+/* 头部的下拉框显示 */
+.nav .shopping-info {
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    overflow: hidden;
+    transition: height 0.3s;
+    /* border-top: 1px solid rgb(224, 224,224); box-shadow: 0 5px 10px rgba(0, 0,0, 0.3); */
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 9999;
+
+}
+
+.nav .item:hover~.shopping-info,
+.nav .shopping-info:hover {
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    height: 228px;
+}
+
+.header-wrapper {
+    position: relative;
+}
+
+/* 右侧搜索栏的设置 */
+.browser {
+    width: 296px;
+    height: 50px;
+    float: right;
+    background-color: red;
+    margin-top: 25px;
+}
+
+.browser .search-inp {
+    border: none;
+    box-sizing: border-box;
+    padding: 0 10px;
+    float: left;
+    height: 50px;
+    width: 244px;
+    outline: none;
+    border: 2px solid rgb(224, 224, 224);
+}
+
+.browser .search-btn {
+    float: left;
+    height: 50px;
+    width: 52px;
+    border: none;
+    border-left: 2px solid rgb(224, 224, 224);
+    padding: none;
+    background-color: white;
+    color: #616161;
+    font-size: 15px;
+    border: 2px solid rgb(224, 224, 224);
+    border-left: none;
+}
+
+.browser .search-inp:focus,
+.browser .search-inp:focus+.search-btn {
+    border-color: #ff6700;
+}
+
+.browser .search-btn:hover {
+    background-color: #ff6700;
+}
+
+.banner {
+    position: relative;
+    height: 460px;
+}
+
+.banner .img-list li {
+    position: absolute;
+}
+
+.banner img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.tap {
+    position: absolute;
+    right: 35px;
+    bottom: 22px;
+}
+
+.tap a {
+    float: left;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    border: 2px rgba(255, 255, 255, .4) solid;
+    margin-left: 6px;
+}
+
+.tap a:hover,
+.tap a:focus {
+    background-color: rgba(255, 255, 255, .4);
+    border: 2px rgba(0, 0, 0, 0.4) solid;
+}
+
+.prev-next a {
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/icon-slides.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.prev {
+    background-position: -83px;
+    left: 234px;
+
+}
+
+.next {
+    background-position: -125px;
+    right: 0;
+
+}
+
+.prev:hover {
+    background-position: 0 0;
+}
+
+.next:hover {
+    background-position: -42px 0;
+}
+
+/* 设置回到顶部的元素 */
+.to-top {
+    width: 26px;
+    height: 206px;
+    background-color: whitesmoke;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    margin-right: -639px;
+    /* 满足等式
+        left+margin-left+margin-right+right=视口宽度
+        这样就可以固定宽度了。
+    
+    */
+}
+
+/* 设置广告栏 */
+.ad {
+    height: 170px;
+    margin-top: 14px;
+}
+
+.ad .shortcut,
+.ad .imgs,
+.ad li{
+    float: left;
+}
+/* 设置左侧的快捷键 */
+.ad .shortcut{
+    padding-left: 6px;
+    padding-top: 2px;
+    width: 228px;
+    height: 168px;
+    background-color: #5f5750;
+    margin-right: 14px;
+}
+.ad .shortcut li{
+    position: relative;
+}
+.ad .shortcut li::before{
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    background-color: #665e57;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+.ad .shortcut li::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    background-color: #665e57;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.ad .shortcut a{
+    display: block;
+    color: #cfccca;
+    height: 84px;
+    width: 76px;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+}
+.ad .shortcut i{
+    margin-top: 12px;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 20px;
+}
+.ad .shortcut a:hover{
+    color: #fff;
+}
+/* 设置图片的样式 */
+.ad .imgs li{
+    width: 316px;
+    height: 170px;
+    margin-right: 15px;
+
+}
+.ad .imgs li:last-child{
+    margin: 0;
+}
+.ad .imgs img{
+    width: 100%;
+}
+.ad .imgs li:hover{
+   box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
