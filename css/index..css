@@ -1,0 +1,317 @@
+/* 顶部的样式 */
+.top-interior {
+    height: 120px;
+    background-image: url(../img/background-img.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    width: 378px;
+    height: 75px;
+}
+
+.right {
+    display: flex;
+}
+
+.top-browser {
+    font-size: 0;
+    margin-right: 30px;
+}
+
+/* 搜索框的样式 */
+.inp {
+    float: left;
+    display: block;
+    width: 204px;
+    height: 36px;
+    border: 1px solid white;
+    outline: none;
+    padding: 0 10px;
+}
+
+.btn {
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-left: none;
+    width: 56px;
+    height: 36px;
+    box-sizing: content-box;
+}
+
+.inp:focus,
+.inp:focus+.btn {
+    border-color: orange;
+}
+
+.btn:hover {
+    background-color: #d01121;
+}
+
+/* 右部的导航条 */
+.span {
+    display: inline-block;
+    height: 56px;
+    width: 140px;
+    line-height: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.span div a {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* 中部导航条样式修改 */
+.nav {
+    width: 1300px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+.nav>li{
+    float: left;
+    width: calc(1300px/9);
+    display: block;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+}
+.nav>li>a{
+    color: black;
+ }
+
+/* 校园资讯 */
+.campus-inferior>li {
+    border: none;
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    font-size: 0px;
+    transition-property: height, font-size;
+    transition-duration: .5s;
+    width: 100%;
+}
+.campus-inferior>li>a{
+    color: black;
+}
+.campus-inferior>li:hover a{
+    color: #ffffff;
+}
+.campus:hover li {
+    border: 1px solid black;
+    height: 54px;
+    font-size: 14px;
+    overflow: visible;
+    background-color: aliceblue;
+}
+
+.campus-inferior>li:hover{
+    background-color: #a70209;
+}
+/* 教学工作 */
+.teaching-work>li {
+    overflow: hidden;
+    border: none;
+    display: block;
+    height: 0px;
+    font-size: 0px;
+    transition-property: height, font-size;
+    transition-duration: .5s;
+    width: 100%;
+}
+.teaching-work>li>a{
+    color: black;
+}
+.teaching:hover li{
+    border: 1px solid black;
+    height: 54px;
+    font-size: 14px;
+    overflow:visible;
+    background-color: aliceblue;
+}
+.teaching-work>li:hover{
+    background-color: #a70209;
+}
+.teaching-work>li:hover a{
+    color: #ffffff;
+}
+/* 科研工作 */
+.tech_inferior>li{
+    overflow: hidden;
+    border: none;
+    display: block;
+    height: 0px;
+    font-size: 0px;
+    transition-property: height,font-size;
+    transition-duration: .5s;
+    width: 100%;
+
+}
+.tech_inferior>li>a{
+    color: black;
+}
+.tech:hover li{
+    border: 1px solid black;
+    height: 54px;
+    font-size: 14px;
+    overflow: visible;
+    background-color: aliceblue;
+}
+.tech_inferior>li:hover{
+    background-color: #a70209;
+}
+.tech_inferior>li:hover a{
+    color: #ffffff;
+}
+/* 团学工作 */
+.group_inferior>li{
+    overflow: hidden;
+    border: none;
+    display: block;
+    height: 0px;
+    font-size: 0px;
+    transition-property: height,font-size;
+    transition-duration: .5s;
+    width: 100%;
+
+}
+.group_inferior>li>a{
+    color: black;
+}
+.group:hover li{
+    border: 1px solid black;
+    height: 54px;
+    font-size: 14px;
+    overflow: visible;
+    background-color: aliceblue;
+}
+.group_inferior>li:hover{
+    background-color: #a70209;
+}
+.group_inferior>li:hover a{
+    color: #ffffff;
+}
+/* 对外合作 */
+.collaboration{
+    overflow: hidden;
+    font-size: 14px;
+}
+.collaboration_inferior>li>a{
+    color: black;
+}
+.collaboration:hover{
+    overflow: visible;
+}
+.collaboration:hover li{
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+.collaboration_inferior>li:hover{
+    background-color: #a70209;
+}
+.collaboration_inferior>li:hover a{
+    color: #ffffff;
+}
+/* 图书档案 */
+.library{
+    overflow: hidden;
+    font-size: 14px;
+}
+.lib_inferior>li>a{
+    color: black;
+}
+.library:hover{
+    overflow: visible;
+}
+.library:hover li{
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+.lib_inferior>li:hover{
+    background-color: #a70209;
+}
+.lib_inferior>li:hover a{
+    color: #ffffff;
+}
+/* 中部的图片 */
+.article{
+    width: 1300px;
+    height: 390px;    
+    background-image: url(../img/1.jpg);
+    margin: 0 auto;
+    
+}
+/* 下部的新闻快讯 */
+/* 标题 */
+.title{
+    padding: 30px 0 15px 0;
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.fast{
+    font-size: 24px;
+    color: #000;
+}
+.more{
+    font-size: 16px;
+    color: #A4A4A3;
+}
+/* 内部图片和快讯 */
+.container{
+    width: 1300px;
+    /* background-color: #bfa; */
+    height: 390px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left_picture{
+    width: 630px;
+    height: 390px;
+}
+.left_picture img{
+    width: 100%;
+    height: 100%;
+}
+.right_news{
+    width: 650px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right_news>p{
+    width: 100%;
+    height: 2px;
+    background-color: #A4A4A3;
+}
+.right_news>div{
+    font-size: 17px;
+    font-family: "yahei";
+    display: flex;
+    align-items: center;
+}
+.right_news>div>i{
+    color: #ffffff;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 10px;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    background-color: #d01122;
+    margin-right: 28px;
+}
+
